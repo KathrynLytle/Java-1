@@ -1,1 +1,4 @@
-console.log('dfgjhv')
+let subscribed = true
+let loggedIn = true 
+
+
