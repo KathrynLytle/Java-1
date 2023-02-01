@@ -1,10 +1,7 @@
 
-//Function definition
 
-function welcomePersonToFES() {
-    console.log("Welcome to FES, Kate")
-}
+let arr =[20, 30, 40, 50, 100]
 
+let newArr = arr.filter(element => element >= 50)
 
-//call the function 
-welcomePersonToFES();
+console.log(newArr)
