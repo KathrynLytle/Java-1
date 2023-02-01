@@ -1,7 +1,6 @@
+let arr = [1, 4, 9, 16]
 
-
-let arr =[20, 30, 40, 50, 100]
-
-let newArr = arr.filter(element => element >= 50)
-
-console.log(newArr)
+let newArray = arr.map((element) => {
+    console.log(element)
+    return undefined
+})
