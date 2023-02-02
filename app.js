@@ -1,6 +1,10 @@
-let arr = [1, 4, 9, 16]
+let dollars = [1, 5, 10, 3]
+let cents = [];
 
-let newArray = arr.map((element) => {
-    console.log(element)
-    return undefined
-})
+for (let i = 0; i < dollars.length; ++i) {
+    cents.push(dollars[i] * 100); 
+}
+
+console.log(cents)
+
+
