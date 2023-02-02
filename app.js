@@ -1,10 +1,27 @@
-let dollars = [1, 5, 10, 3]
-let cents = [];
+let users = [ 
+    {
+    username: 'Kate', 
+    email: 'kate@hotmail.com',
+    password: 'test123',
+    subscriptionStatus: 'VIP',
+    discordId: 'kate#0001',
+    lessonsCompleted: [0, 1]
+},
+{
+    username: 'Mitri', 
+    email: 'mitri@hotmail.com',
+    password: 'mitri123',
+    subscriptionStatus: 'VIP',
+    discordId: 'mitri#0001',
+    lessonsCompleted: [0, 1]
+}
+]
 
-for (let i = 0; i < dollars.length; ++i) {
-    cents.push(dollars[i] * 100); 
+function login(email, password) {
+    for (let i = 0; i < users.length; ++i) {
+        console.log(users[i]);
+    }
 }
 
-console.log(cents)
 
-
+login('kate@hotmail.com', 'test123');
