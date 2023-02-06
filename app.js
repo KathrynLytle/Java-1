@@ -1,11 +1,15 @@
 
 
 
-function isLoggedInAndSubscribed(loggedIn, subscribed) {
-    return (loggedIn === 'LOGGED_IN') || (subscribed === 'SUBSCRIBED')
-       
+
+
+
+function arrSum(arr) {
+    for (let i = 0; i < arr.length; ++i) {
+
+        console.log(arr[i])
     }
+     console.log('for loop broke')
+}
 
-   
-
-console.log(isLoggedInAndSubscribed('LOGGED_OUT', 'UNSUBSCRIBED'));
+console.log(arrSum([2, 2, 2, 2, 5]));
