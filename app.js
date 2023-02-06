@@ -1,8 +1,13 @@
 
 
-function lessThanOrEqualToZero(num) {
-    return num <= 0
-   
+
+function booleanInteger(num) {
+    if (num % 2 === 0) {
+        return 1
+    }
+
+        return -1
+    
 }
 
-console.log(lessThanOrEqualToZero(0));
+console.log(booleanInteger(7));
