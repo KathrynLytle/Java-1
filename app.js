@@ -1,13 +1,11 @@
 
 
 
-function booleanInteger(num) {
-    if (num % 2 === 0) {
-        return 1
+function isLoggedInAndSubscribed(loggedIn, subscribed) {
+    return (loggedIn === 'LOGGED_IN') || (subscribed === 'SUBSCRIBED')
+       
     }
 
-        return -1
-    
-}
+   
 
-console.log(booleanInteger(7));
+console.log(isLoggedInAndSubscribed('LOGGED_OUT', 'UNSUBSCRIBED'));
