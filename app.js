@@ -4,12 +4,15 @@
 
 
 
-function arrSum(arr) {
-    for (let i = 0; i < arr.length; ++i) {
-
-        console.log(arr[i])
+function getMax(arr) {
+    let max = arr[0]
+   for (let i = 0; i < arr.length; ++i) {
+    if (arr[i] > max) {
+        max = arr[i];
     }
-     console.log('for loop broke')
+   } 
+   return max; 
+
 }
 
-console.log(arrSum([2, 2, 2, 2, 5]));
+console.log(getMax([-100, -200, -300]));
