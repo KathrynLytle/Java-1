@@ -4,15 +4,9 @@
 
 
 
-function reverseString(str) {
-let reversedString = ''; 
-for (let i = str.length; i >= 0; --i) {
-
-    console.log(str[i]); 
-}
-
-return null;
+function convertToZeros(arr) {
+  return  arr.map(elem => 0);
 
 }
 
-console.log(reverseString('abc'))
+console.log(convertToZeros([5, 100, 0]))
