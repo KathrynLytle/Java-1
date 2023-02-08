@@ -4,15 +4,15 @@
 
 
 
-function getMax(arr){ 
-let max = arr[0]
-for (let i = 0; i < arr.length; ++i) {
-if (arr[i] > max) {
-    max = arr[i];
+function reverseString(str) {
+let reversedString = ''; 
+for (let i = str.length; i >= 0; --i) {
+
+    console.log(str[i]); 
 }
-}
-return max; 
+
+return null;
 
 }
 
-console.log(getMax([10, 20, 30]))
+console.log(reverseString('abc'))
