@@ -4,11 +4,12 @@
 
 
 
-function removeApples(arr) {
-    return arr.filter(elem => elem !== 'apple')
+function convertToBoolean(arr) {
+    return arr.map(elem => !!elem)
     }
+
+
       
-  
 
 
-console.log(removeApples(['banana', 'apple', 'orange', 'apple'])); 
+console.log(convertToBoolean([500, 600, 0, ""])); 
