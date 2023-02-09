@@ -1,12 +1,16 @@
-async function postsByUser(userId) {
-    const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+
+
+async function firstSixIncomplete(elem) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
     
 
     const result = await promise.json()
 
-    const posts = result.filter(element => element.userId === userId)
 
-    console.log(posts)
+    const incompletedTasks = result.filter(elem => !elem.completed).slice(0, 6);
+
+    console.log(incompletedTasks)
     
 }
-postsByUser(4); 
+firstSixIncomplete(6); 
